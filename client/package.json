@@ -1,0 +1,16 @@
+{
+  "name": "secretFruit",
+  "version": "1.0.0",
+  "description": "果秘美容会所",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangbo7753/secretFruit.git"
+  },
+  "keywords": ["weapp"],
+  "author": "wangbo7753",
+  "license": "MIT",
+  "dependencies": {
+    "wafer2-client-sdk": "^1.0.0"
+  }
+}

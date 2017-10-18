@@ -1,0 +1,24 @@
+<!-- index.wxml -->
+<view wx:if="{{loading}}">loading...</view>
+<view class="container">
+    <view class="news-title">
+        <block wx:for="{{categories}}" wx:key="cateId">
+            <view class="cate-item">
+                <image class="cate-img" src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg"></image>
+                <text class="cate-brief">{{item.brief}}</text>
+            </view>
+        </block>
+    </view>
+    <text class="hot">————·猜你喜欢·————</text>
+    <view class="news-content">
+        <block wx:for="{{categories}}" wx:key="cateId">
+            <view class="goods-item">
+                <image class="goods-img" src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg"></image>
+                <view class="goods-brief">
+                    <text style="color: #000000; font-size: 18px; font-weight: 400;">{{'￥' + item.price}}</text>
+                    <text style="color: #888888; font-size: 12px;">{{item.store + '收藏'}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
